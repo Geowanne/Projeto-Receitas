@@ -206,9 +206,20 @@ h6 {
     transition: all 300ms ease-in-out;
 }
 
+.main-content-detail .recipe-list-item {
+    max-width: 84rem;
+    margin: 0 auto;
+}
+
+.main-content-detail .recipe-list-item:hover {
+    transform: scale(1);
+    box-shadow: -5px 8px 15px rgba(0, 0, 0, .2);
+}   
+
 .recipe-footer a:hover {
     filter: brightness(2);
 }
+
 
 .main-footer {
     display: flex;
@@ -228,3 +239,4 @@ h6 {
 .main-footer a:hover {
     filter: brightness(.8);
 }
+
