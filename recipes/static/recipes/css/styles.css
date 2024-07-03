@@ -32,7 +32,7 @@
     --color-gray-9: #191919;
     --font-primary: sans-serif;
     --font-headings: 'Roboto Slab', serif;
-    --spacing-gutter-medium: 3rem;
+    --spacing-gutter-medium: 10px;
     --spacing-gutter-large: 4rem;
 }
 * {
@@ -152,6 +152,11 @@ h6 {
     padding-bottom: 2rem;
 }
 
+.recipe-title-container a {
+    text-decoration: none;
+    color:var(--color-primary-dark);
+}
+
 .recipe-author {
     padding: 0 var(--spacing-gutter-medium);
 }
@@ -221,7 +226,7 @@ h6 {
     filter: brightness(2);
 }
 
-.preparation_steps {
+.preparation-steps {
     padding: var(--spacing-gutter-medium);
 }
 
