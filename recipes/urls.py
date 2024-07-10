@@ -9,3 +9,4 @@ urlpatterns = [
     path('', views.home, name="home"), #HOME
     path('recipes/<int:id>/', views.recipe, name="recipe"), #Receita
 ]
+

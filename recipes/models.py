@@ -9,7 +9,7 @@ class Category(models.Model):
         return self.nome
 
 class Recipe(models.Model):
-    titel = models.CharField(max_length=65)
+    title = models.CharField(max_length=65)
     descripition = models.CharField(max_length=165)
     slug = models.SlugField()
     preparation_time = models.IntegerField()
@@ -23,4 +23,8 @@ class Recipe(models.Model):
     is_published = models.BooleanField(default=False)
     cover = models.ImageField(upload_to='recipes/covers/%Y/%m/%d/')
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
-    cauthor = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+    author = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+
+    def __str__(self):
+        return self.title       
+    
